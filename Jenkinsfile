@@ -22,6 +22,13 @@ pipeline {
             }
         }
 		
+		stage('Notification for code') {
+            steps {
+                echo 'Notitying over email'
+            }
+        }
+		
+		
     }
     post { 
         always { 
