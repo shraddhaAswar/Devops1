@@ -9,6 +9,12 @@ pipeline {
         }
 		
 		
+		stage('Testing the code') {
+            steps {
+                echo 'Testing the code'
+				sh 'mvn test'
+            }
+        }
 		
     }
     post { 
